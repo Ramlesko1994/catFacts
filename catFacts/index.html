@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cat Facts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mainPage">
+            <div class="row">
+                <h1 id="catTitle">Get Cat Facts</h1>
+                <hr style="margin: 5px;">
+            </div>
+            <div class="row">
+                <div style="padding-top: 10px;" class="col-sm-6">
+                        <form id="kittyFacts" action="" method="POST">
+                            <label style="font-size: medium;" for="factCount">How many Cat Facts do you want?</label><br>
+                            <input  type="number" id="factCount" name="factCount" min="1" max="15" placeholder="Number of Cat Facts">
+                            <input id="factSubmit" style="margin-left: 5px;" type="submit" value="Get Facts">
+                        </form>
+                </div>
+                <div style="padding-top: 10px;" class="col-sm-6">
+                        <div id="factBox" style="width: 90%;">
+                        </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Decided to use bootstrap for organization and responsive design. I could have used @media css references, but bootstrap is much quicker.-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

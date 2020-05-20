@@ -1,0 +1,43 @@
+body {
+    background-color: slategray !important;
+}
+
+#factCount{
+    width: 50%;
+    border-radius: 5px;
+}
+
+#factBox{
+    font-size: medium;
+    border-left: black solid 2px;
+}
+
+#factSubmit{
+    border-radius: 5px;
+}
+
+#catTitle {
+    margin-top: 0px;
+    margin-left:5px;
+    font-weight: bold;
+}
+
+.mainPage {
+  font-family: "Arial";
+  margin-top: 40px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+/*I could have done the box-shadow from scratch, but it is much quicker to just grab the css from a box shadow generator page, I used  https://www.cssmatic.com/box-shadow  */
+-webkit-box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 766px){
+    #factBox{
+        font-size: medium;
+        border-left: black solid 0px;
+    }
+}
